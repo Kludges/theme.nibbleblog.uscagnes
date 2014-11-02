@@ -13,7 +13,7 @@
     echo Blog::jquery();
 
     // Include Javascript
-    echo Blog::javascript(array('browser-update.js', 'rainbow-custom.min.js', 'sidebar.js', 'taglist.js'));
+    echo Blog::javascript(array('browser-update.js', 'rainbow-custom.min.js', 'taglist.js'));
 
     // Include Favicon
     echo Blog::favicon();
@@ -81,6 +81,23 @@
             }
         echo '</section>';
     }
+    ?>
+	
+    <!-- Sponsor Bar -->
+    <?php
+	$sponsors = null;
+	foreach($plugins_sidebar as $plugin)
+	{
+	  if ($plugin->database('title') == "Sponsors")
+	    $sponsors = $plugin;
+	}
+
+        if ($sponsors != null) {
+	  echo '<section id="rightbar">';
+          echo '<h2>Sponsors</h2>';
+	  echo $sponsors->blog_body();
+	  echo '</section>';	
+	}
     ?>
 
     <!-- MAIN -->
