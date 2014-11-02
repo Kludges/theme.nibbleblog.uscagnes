@@ -159,11 +159,11 @@ a:hover {
     bottom: 0;
     display: block;
     right: 5%;
-    height: 100px;
+    height: 130px;
     min-height: 30%;
     min-width: 30px;
     overflow: hidden;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
     position: fixed;
     top: 75px;
     z-index: 10;
@@ -190,9 +190,14 @@ a:hover {
 #rightbar  ul  li {
     color: #ffffff;
     list-style: none;
+    margin-top: 5px;
     transition: background 0.2s ease;
 }
 
+#rightbar ul  li img {
+  height: 64px;
+  width: 64px;
+}
 
 /* --------------------- */
 /*     NAVIGATION BAR    */
