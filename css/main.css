@@ -150,6 +150,26 @@ a:hover {
 }
 
 /* --------------------- */
+/*     RIGHT BAR    */
+/* --------------------- */
+
+#rightbar {
+    background: #454545 url("img/body_pattern.png") repeat top left;
+    border-bottom-right-radius: 5px;
+    bottom: 0;
+    display: block;
+    left: 0;
+    min-height: 100%;
+    min-width: 15%;
+    overflow: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 50px;
+    z-index: 10;
+}
+
+
+/* --------------------- */
 /*     NAVIGATION BAR    */
 /* --------------------- */
 #navbar {
